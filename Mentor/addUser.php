@@ -72,7 +72,7 @@ if(isset($_POST['addBtn'])){
 }
 ?>
 
-<!-- Preventing resubmission on refersh -->
+<!-- Preventing resubmission of page -->
 <script>  
 if ( window.history.replaceState ) { 
         window.history.replaceState( null, null, window.location.href); 

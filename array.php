@@ -8,7 +8,7 @@ echo "<br>";
 echo $student[2];
 
 // Associative Array
-$student1 = array("Name"=>"Mohit", "Age"=>25, "City"=>"Kartarpur");
+$student1 = array("Name"=>"Mohit", "Age"=>28, "City"=>"Kartarpur");
 echo "<br><br>";
 var_dump($student1);
 echo "<br>";

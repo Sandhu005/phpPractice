@@ -41,41 +41,46 @@
   <header id="header" class="header d-flex align-items-center sticky-top">
     <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="index.php" class="logo d-flex align-items-center me-auto">
+      <a href="adminIndex.php" class="logo d-flex align-items-center me-auto">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Mentor</h1>
+        <h1 class="sitename">Admin Panel</h1>
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.php" class="active">Home<br></a></li>
-          <li><a href="about.php">About</a></li>
-          <li><a href="courses.php">Courses</a></li>
-          <li><a href="trainers.php">Trainers</a></li>
-          <li><a href="events.php">Events</a></li>
-          <li><a href="pricing.php">Pricing</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="addUser.php">Add User</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><a href="adminIndex.php" class="active">Dashboard<br></a></li>
+           <li class="dropdown"><a href="#"><span>Products</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
+                  <li><a href="#">Manage Courses</a></li>
+                  <li><a href="#">Manage Catagory</a></li>
                 </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="contact.php">Contact</a></li>
+            </li>
+            <li class="dropdown"><a href="#"><span>Content</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">Manager Lectures</a></li>
+                  <li><a href="#">Manage Certificates</a></li>
+                  <li><a href="#">Manage Assignments</a></li>
+                  <li><a href="#">View Feedbacks</a></li>\
+                </ul>
+            </li>
+            <li class="dropdown"><a href="#"><span>Users</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">View All Users</a></li>
+                  <li><a href="manageUsers.php">Manage Users</a></li>
+                </ul>
+            </li>
+            <li class="dropdown"><a href="#"><span>Finances</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="#">View Transactions</a></li>
+                  <li><a href="#">Manage Subscription Plans</a></li>
+                  <li><a href="#">Manage Refunds</a></li>
+                  <li><a href="#">Manage Instructor Payouts</a></li>
+                </ul>
+            </li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-        <a class="btn-getstarted" href="login.php">Login Here</a>
+        <a class="btn-getstarted px-3" href="login.php">Sign Out</a>
     </div>
   </header>

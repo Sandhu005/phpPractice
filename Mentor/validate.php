@@ -5,7 +5,7 @@ $pwd = $_POST['pwd'];
 
 if($email=="admin@gmail.com" && $pwd=="123"){
     echo "<script>
-            window.location.replace('index.php?msg=Welcome, Admin!');
+            window.location.replace('adminIndex.php');
         </script>";
 }
 else{

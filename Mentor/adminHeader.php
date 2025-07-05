@@ -50,10 +50,10 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="adminIndex.php" class="active">Dashboard<br></a></li>
-           <li class="dropdown"><a href="#"><span>Products</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+           <li class="dropdown"><a href="#"><span>Catagory</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
-                  <li><a href="#">Manage Courses</a></li>
-                  <li><a href="#">Manage Catagory</a></li>
+                  <li><a href="addCatagory.php">Add Catagory</a></li>
+                  <li><a href="manageCatagory.php">Manage Catagory</a></li>
                 </ul>
             </li>
             <li class="dropdown"><a href="#"><span>Content</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
@@ -81,6 +81,6 @@
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-        <a class="btn-getstarted px-3" href="login.php">Sign Out</a>
+        <a class="btn-getstarted px-3" href="login.php">Logout</a>
     </div>
   </header>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 02, 2025 at 04:50 PM
+-- Generation Time: Jul 06, 2025 at 11:00 AM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -20,6 +20,53 @@ SET time_zone = "+00:00";
 --
 -- Database: `mentor`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `coursecatagory`
+--
+
+CREATE TABLE `coursecatagory` (
+  `id` int(50) NOT NULL,
+  `name` varchar(20) NOT NULL,
+  `status` varchar(20) NOT NULL DEFAULT 'active',
+  `createdAt` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `coursecatagory`
+--
+
+INSERT INTO `coursecatagory` (`id`, `name`, `status`, `createdAt`) VALUES
+(1, 'Android', 'active', '2025-07-05 09:30:59'),
+(4, 'Web development', 'active', '2025-07-05 09:36:06'),
+(5, 'Cyber Security', 'active', '2025-07-05 09:36:39');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `product`
+--
+
+CREATE TABLE `product` (
+  `id` int(50) NOT NULL,
+  `name` varchar(50) NOT NULL,
+  `catagory` varchar(50) NOT NULL,
+  `status` varchar(20) NOT NULL DEFAULT 'Active',
+  `createdAt` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Dumping data for table `product`
+--
+
+INSERT INTO `product` (`id`, `name`, `catagory`, `status`, `createdAt`) VALUES
+(1, 'php', 'Web development', 'Active', '2025-07-06 08:17:44'),
+(2, 'angular', 'Web development', 'Active', '2025-07-06 08:18:31'),
+(3, 'kali linux', 'Cyber security', 'Active', '2025-07-06 08:18:57'),
+(4, 'wireshark', 'Cyber security', 'Active', '2025-07-06 08:19:20'),
+(5, 'kotlin', 'Android', 'Active', '2025-07-06 08:19:41');
 
 -- --------------------------------------------------------
 
@@ -50,6 +97,18 @@ INSERT INTO `userdata` (`id`, `name`, `email`, `password`, `status`, `createdAt`
 --
 
 --
+-- Indexes for table `coursecatagory`
+--
+ALTER TABLE `coursecatagory`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `product`
+--
+ALTER TABLE `product`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `userdata`
 --
 ALTER TABLE `userdata`
@@ -58,6 +117,18 @@ ALTER TABLE `userdata`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `coursecatagory`
+--
+ALTER TABLE `coursecatagory`
+  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- AUTO_INCREMENT for table `product`
+--
+ALTER TABLE `product`
+  MODIFY `id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `userdata`

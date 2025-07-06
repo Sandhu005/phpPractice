@@ -1,6 +1,6 @@
 <!-- Header -->
 <?php
-include("header.php");
+include("adminHeader.php");
 ?>
 
 <main class="main">
@@ -47,7 +47,7 @@ include("header.php");
             </div>
         </form>
     </div>
-
+</main>
 <!-- Adding user to Database -->
 <?php
 if(isset($_POST['addBtn'])){
@@ -81,5 +81,5 @@ if ( window.history.replaceState ) {
 
 <!-- Footer -->
 <?php
-include("footer.php");
+include("adminFooter.php");
 ?>

@@ -50,6 +50,12 @@
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="adminIndex.php" class="active">Dashboard<br></a></li>
+          <li class="dropdown"><a href="#"><span>Product</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+                <ul>
+                  <li><a href="addProduct.php">Add Product</a></li>
+                  <li><a href="manageProduct.php">Manage Product</a></li>
+                </ul>
+            </li>
            <li class="dropdown"><a href="#"><span>Catagory</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
                   <li><a href="addCatagory.php">Add Catagory</a></li>
@@ -66,7 +72,7 @@
             </li>
             <li class="dropdown"><a href="#"><span>Users</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
                 <ul>
-                  <li><a href="#">View All Users</a></li>
+                  <li><a href="addUsers.php">Add Users</a></li>
                   <li><a href="manageUsers.php">Manage Users</a></li>
                 </ul>
             </li>
